@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manda Trends</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    object-fit: contain;
+}
+
+/* ---------------------------------HEADER--------------------------------- */
+
+.header {
+    width: 100%;
+    padding: 5px 25px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(to right, #e9492a, #e72357);
+    justify-content: space-between;
+    align-items: center;
+    max-height: 25%;
+    z-index: 1;
+}
+
+.left, .middle, .right {
+    display: flex;
+}
+
+.header img {
+    width: 100%;
+}
+
+.left {
+    position: relative;
+    height: 100%;
+}
+
+.left .bolinhas{
+    position: absolute;
+    left: -80px;
+}
+
+.middle {
+
+    margin-bottom: -50px;
+}
+
+
+
+
+/* -----------------------------------------CONTEUDO------------------------------- */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.conteudo-principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    z-index: 10;
+}
+
+.color-bar {
+    margin-top: 10px;
+    height: 3px;
+    width: 50%;
+}
+
+.zero {
+    background: linear-gradient(to right, rgb(230, 34, 89), rgb(108, 90, 162));
+}
+
+.one {
+    background: linear-gradient(to right, rgb(118, 198, 207), rgb(103, 95, 166));
+}
+
+.two {
+    background: linear-gradient(to right, rgb(117, 199, 207), rgb(58, 179, 138));
+}
+
+.one, .two {
+    width: 65%;
+}
+
+
+.img-principal img {
+    width: 100%;
+}
+
+.img-sub {
+    width: 100%;
+    height: 60%;
+}
+
+.img-sub img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-sub h1 {
+    font-size: 70%;
+}
+
+h1, h2, h3 {
+    margin-top: 15px;
+}
+
+h1 {
+    color: #231f20;
+}
+
+h2 {
+    font-weight: lighter;
+    color: #74787a;
+
+}
+
+h3 {
+    font-style: italic;
+    color: gray;
+}
+
+.box-sub {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.sub-conteudos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 48%;
+}
+
+/* ------------------------------FOOTER--------------------------------------- */
+
+
+footer {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fc4c02;
+}
+
+.banner-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.banner-footer img {
+    width: 60%;
+}
+
+.text-footer {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.text-footer a, p{
+    font-size: small;
+    color: #74787a;
+    text-align: center;
+}
+
+.text-footer a {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+
+    h1, h2, h3 {
+        margin-top: 5px;
+    }
+
+    h1 {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 8px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="left">
+            <img class="bolinhas" src="assets/bolinhas.png">
+            <img src="assets/manda_trends.png" alt="">
+        </div>
+        <div class="middle">
+            <img src="images/header_middle.png" alt="">
+        </div>
+        <div class="right">
+            <img src="images/header_right.png" alt="">
+        </div>
+
+    </section>
+    
+    <div class="conteudo"> 
+        <div class="conteudo-principal">
+        <div class="img-principal">
+            <img src="images/img-principal.png" alt="">
+        </div>
+        <div class="texto-principal">
+            <h1>NRF 2020: conheça os top 5 assuntos do evento.</h1>
+            <h2>O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações do setor.</h2>
+            <h3>Fonte: CMO ADOBE</h3>    
+        </div>
+        <span class="color-bar zero"></span>
+        </div>
+
+
+        <div class="box-sub">
+        <div class="sub-conteudos">            
+            <div class="img-sub">
+                <img src="images/nba.png" alt="">
+            </div>
+            <div class="texto-sub">
+                <h1>Petição para colocar Kobe Bryant no logo da NBA.</h1>
+                <h3>Fonte: Daily Mail</h3>
+            </div>
+            <span class="color-bar one"></span>
+        </div>
+        <div class="sub-conteudos">            
+            <div class="img-sub">
+                <img src="images/whats.png" alt="">
+            </div>
+            <div class="texto-sub">
+                <h1>WhatsApp terá função de pagamentos em 2020.</h1>
+                <h3>Fonte: Proxxima</h3>
+            </div>
+            <span class="color-bar two"></span>
+        </div>
+
+
+        </div> 
+
+    </div>
+
+    <footer>
+        <div class="banner-footer">
+            <img src="assets/footer-banner.png" alt="">
+        </div>
+    </footer> 
+    <div class="text-footer">
+        <p>Copyright ® Mandarin. Todos os direitos reservados.</p>
+        <p>Caso não queira mais receber nossos e-mail, por favor <a href="#">clique aqui.</a></p> 
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
